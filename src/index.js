@@ -8,7 +8,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-mongoose.connect("mongodb+srv://functionup-cohort:G0Loxqc9wFEGyEeJ@cluster0.rzotr.mongodb.net/Pritesh8769811-DB?retryWrites=true&w=majority", {
+mongoose.connect(
+    "mongodb+srv://Vaibhav1122:Kundra1122@cluster0.im7mlhj.mongodb.net/Kundra-DB", {
     useNewUrlParser: true
 })
 .then( () => console.log("MongoDb is connected"))
@@ -20,3 +21,4 @@ app.use('/', route);
 app.listen(process.env.PORT || 3000, function () {
     console.log('Express app running on port ' + (process.env.PORT || 3000))
 });
+
